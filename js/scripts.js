@@ -21,8 +21,10 @@ this.total = 0
 Pizza.prototype.topCheck = function(){
   this.finalTotal = 0;
   if(pizzaObject.topping.includes("pep")){
+    this.finalTotal = this.total += 2.00;
+  } else if(pizzaObject.topping.includes("cheese")){
     this.finalTotal = this.total += 1.00;
-  } else {
-    return false;
+  } else if(pizzaObject.topping.includes("onions")){
+    this.finalTotal = this.total += 2.00;
   }
 }
