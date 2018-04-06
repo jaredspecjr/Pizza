@@ -45,5 +45,5 @@ _Email no one with any questions, comments, or concerns._
 
 ##
 Gh-Pages link
-**
+*https://jaredspecjr.github.io/independent-project-4/*
 Copyright (c) 2018 **_{Jared Lutz}_**
