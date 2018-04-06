@@ -17,14 +17,24 @@ this.total = 0
     this.total = 10.00;
   }
 }
-
-Pizza.prototype.topCheck = function(){
+//this code below is refactored to check for every topping and just add a 1 per topping instead of individual topping checks.
+Pizza.prototype.topCheck = function (){
   this.finalTotal = 0;
-  if(pizzaObject.topping.includes("pep")){
-    this.finalTotal = this.total += 2.00;
-  } else if(pizzaObject.topping.includes("cheese")){
+  for(i = 1; i <= pizzaObject.topping.length; i ++){
     this.finalTotal = this.total += 1.00;
-  } else if(pizzaObject.topping.includes("onions")){
-    this.finalTotal = this.total += 2.00;
   }
 }
+
+
+
+
+// Pizza.prototype.topCheck = function(){
+//   this.finalTotal = 0;
+//   if(pizzaObject.topping.includes("pep", )){
+//     this.finalTotal = this.total += 2.00;
+//   } else if(pizzaObject.topping.includes("cheese")){
+//     this.finalTotal = this.total += 1.00;
+//   } else if(pizzaObject.topping.includes("onions")){
+//     this.finalTotal = this.total += 2.00;
+//   }
+// }
