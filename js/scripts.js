@@ -38,7 +38,7 @@ $(document).ready(function(){
         pizzaObject.topCheck();
         $(".well").show();
         $("#yourTotal").text(pizzaObject.name + " your total is!");
-        $("#total").text(pizzaObject.finalTotal);
-      })
+        $("#total").text("$" + pizzaObject.finalTotal);
+    })
   });
 });

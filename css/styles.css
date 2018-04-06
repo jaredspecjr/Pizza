@@ -1,3 +1,39 @@
+body{
+  background-color: darkred;
+}
+.jumbotron{
+  border-style: solid;
+  border-color: black;
+}
 .well{
   display: none;
+}
+#yourTotal{
+  text-align: center;
+
+}
+#total{
+  font-size: 200px;
+  margin-left: 30%;
+}
+#col2{
+  text-align: center;
+  background-color: black;
+  list-style-type: none;
+  font-size: 40px;
+  padding: 100px;
+  padding-left: 80px;
+  color: yellow;
+}
+#bulletPoint{
+  list-style-type: none;
+}
+#sizes{
+  margin-left: 35px;
+}
+#name{
+  margin-bottom: 50px;
+}
+#size{
+  margin-bottom: 50px;
 }

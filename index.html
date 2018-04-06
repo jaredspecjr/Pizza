@@ -11,27 +11,39 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <form id="form1">
-          <h4>Welcome to the Pizza shop yo!</h4>
-          <label for="name">Please enter your name</label>
-          <input id="name" type="text">
-          <h3>Select from one of many Pizza sizes!</h3>
-          <select id="size">
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-          </select>
-          <h3>Pick some toppings! ($1.00 per topping)</h3>
-          <div class="form-group">
-            <input type="checkbox" name="topping" value="cheese"> Cheese<br>
-            <input type="checkbox" name="topping" value="onions"> Onions<br>
-            <input type="checkbox" name="topping" value="pepperoni"> Pepperoni<br>
+        <div class="row">
+          <div class="col-md-6">
+            <form id="form1">
+              <h4>Welcome to the Pizza shop yo!</h4>
+              <label for="name">Please enter your name</label>
+              <input id="name" type="text">
+              <h3>Select from one of many Pizza sizes!</h3>
+              <select id="size">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+              </select>
+              <h3>Pick some toppings! ($1.00 per topping)</h3>
+              <div class="form-group">
+                <input type="checkbox" name="topping" value="cheese"> Cheese<br>
+                <input type="checkbox" name="topping" value="onions"> Onions<br>
+                <input type="checkbox" name="topping" value="pepperoni"> Pepperoni<br>
+              </div>
+              <button type="submit" class="btn btn-danger">Place Order</button>
+            </form>
           </div>
-          <button type="submit" class="btn btn-success">Place Order</button>
-        </form>
+          <div id="col2" class="col-md-6">
+            <h4 id ="sizes">Pizza Sizes</h4>
+            <ul id="bulletPoint">
+              <li>Small: $10.00</li>
+              <li>Medium: $15.00</li>
+              <li>Large: $20.00</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="well">
-        <h4 id="yourTotal"></h4>
+        <h2 id="yourTotal"></h2>
         <span id="total"></span>
       </div>
     </div>
