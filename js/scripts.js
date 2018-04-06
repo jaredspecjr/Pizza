@@ -36,7 +36,9 @@ $(document).ready(function(){
         pizzaObject.topping.push($(this).val());
         pizzaObject.sizeCheck();
         pizzaObject.topCheck();
-        console.log(pizzaObject);
+        $(".well").show();
+        $("#yourTotal").text(pizzaObject.name + " your total is!");
+        $("#total").text(pizzaObject.finalTotal);
       })
   });
 });
