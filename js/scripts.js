@@ -1,5 +1,5 @@
 var pizzaObject = new Pizza("jared");
-function Pizza(name,){
+function Pizza(name){
   this.name = name;
   this.size = [];
   this.topping = [];
