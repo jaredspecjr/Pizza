@@ -12,18 +12,18 @@ function Pizza(name){
 Pizza.prototype.sizeCheck = function(){
 this.total = 0
   if(pizzaObject.size.includes("Medium")){
-    this.total = 15.00;
+    this.total = 14.99;
   } else if (pizzaObject.size.includes("Large")){
-    this.total = 20.00;
+    this.total = 19.99;
   } else if (pizzaObject.size.includes("Small")){
-    this.total = 10.00;
+    this.total = 9.99;
   }
 }
 //this code below is refactored to check for every topping and just add a 1 per topping instead of individual topping checks.
 Pizza.prototype.topCheck = function (){
 this.finalTotal = 0;
   for(i = 1; i <= pizzaObject.topping.length; i ++){
-    this.finalTotal = this.total += 1.00;
+    this.finalTotal = this.total += .50;
   }
 }
 //front-end-logic
@@ -37,8 +37,8 @@ $(document).ready(function(){
         pizzaObject.sizeCheck();
         pizzaObject.topCheck();
         $(".well").show();
-        $("#yourTotal").text(pizzaObject.name + " your total is!");
-        $("#total").text("$" + pizzaObject.finalTotal);
+        $("#yourTotal").text(pizzaObject.name + ", your total comes out to");
+        $("#total").text("$" + pizzaObject.finalTotal.toFixed(2));
     })
   });
 });
