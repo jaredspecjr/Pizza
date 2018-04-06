@@ -5,6 +5,7 @@ body{
   border-style: solid;
   border-color: black;
   background-image: url(../img/pizza.jpeg);
+  background-size: contain;
 }
 .well{
   display: none;
