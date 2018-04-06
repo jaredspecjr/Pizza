@@ -8,10 +8,13 @@ function Pizza(name,){
 }
 
 Pizza.prototype.sizeCheck = function(){
-  if(pizzaObject.size.includes("med") || pizzaObject.size.includes("small") || pizzaObject.size.includes("large")){
-    return true;
-  } else {
-    return false;
+this.total = 0
+  if(pizzaObject.size.includes("med")){
+    this.total = 15.00;
+  } else if (pizzaObject.size.includes("large")){
+    this.total = 20.00;
+  } else if (pizzaObject.size.includes("small")){
+    this.total = 10.00;
   }
 }
 
