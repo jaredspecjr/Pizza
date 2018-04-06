@@ -36,6 +36,9 @@ $(document).ready(function(){
         pizzaObject.topping.push($(this).val());
         pizzaObject.sizeCheck();
         pizzaObject.topCheck();
+        if(pizzaObject.topping.length === 5){
+          $("#advertisement").show();
+        }
         $(".well").show();
         $("#yourTotal").text(pizzaObject.name + ", your total comes out to");
         $("#total").text("$" + pizzaObject.finalTotal.toFixed(2));

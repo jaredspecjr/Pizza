@@ -8,6 +8,8 @@ body{
   background-size: contain;
 }
 .well{
+  border-style: solid;
+  border-color: gold;
   display: none;
   background-color: #3d0001;
   color: gold;
@@ -52,4 +54,12 @@ padding-bottom: 13px;
 }
 #size:hover{
   cursor: pointer;
+}
+#advertisement{
+  border-style: solid;
+  border-color: gold;
+  display: none;
+  background-color: #3d0001;
+  color: gold;
+  text-align: center;
 }
